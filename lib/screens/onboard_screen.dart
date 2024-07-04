@@ -13,7 +13,7 @@ class OnboardScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(20.0,50.0,20.0,100.0),
+        padding: const EdgeInsets.fromLTRB(20.0,50.0,20.0,0.0),
         child: Center(
           child: Column(
             crossAxisAlignment:CrossAxisAlignment.stretch,
@@ -27,37 +27,40 @@ class OnboardScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 10.0,),
-              Expanded(
-                flex: 1,
-                child : Container(
-                  height: 25.0,
-                  decoration: BoxDecoration(
-                    color: Colors.indigo[50],
-                    borderRadius: const BorderRadius.all(Radius.circular(20.0)),
-                  ),
-                  child: const Padding(
-                    padding: EdgeInsets.fromLTRB(30.0,25.0,30.0,25.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Welcome',
-                          style: TextStyle(
-                            fontSize: 27.0,
-                            fontWeight: FontWeight.bold,
-                            color: Color(0xff7c4dff)
+              Container(
+                height: 155.0,
+                child: Expanded(
+                  flex: 1,
+                  child : Container(
+                    height: 25.0,
+                    decoration: BoxDecoration(
+                      color: Colors.indigo[50],
+                      borderRadius: const BorderRadius.all(Radius.circular(20.0)),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.fromLTRB(30.0,25.0,30.0,25.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'Welcome',
+                            style: TextStyle(
+                              fontSize: 27.0,
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xff7c4dff)
+                            ),
                           ),
-                        ),
-                        SizedBox(height: 2.0,),
-                        Text(
-                            'What aspect of Exploration Interests you the most',
-                          style: TextStyle(
-                            fontSize: 20.0,
+                          SizedBox(height: 2.0,),
+                          Text(
+                              'What aspect of Exploration Interests you the most',
+                            style: TextStyle(
+                              fontSize: 20.0,
+                            ),
                           ),
-                        ),
-                      ],
-                    )
+                        ],
+                      )
+                    ),
                   ),
                 ),
               ),
