@@ -28,42 +28,40 @@ class OnboardScreen extends StatelessWidget {
               ),
               const SizedBox(height: 10.0,),
               Container(
-                height: 155.0,
-                child: Expanded(
-                  flex: 1,
-                  child : Container(
-                    height: 25.0,
-                    decoration: BoxDecoration(
-                      color: Colors.indigo[50],
-                      borderRadius: const BorderRadius.all(Radius.circular(20.0)),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.fromLTRB(30.0,25.0,30.0,25.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            'Welcome',
-                            style: TextStyle(
-                              fontSize: 27.0,
-                              fontWeight: FontWeight.bold,
-                              color: Color(0xff7c4dff)
-                            ),
+                height: 150.0,
+                child: Container(
+                  height: 25.0,
+                  decoration: BoxDecoration(
+                    color: Colors.indigo[50],
+                    borderRadius: const BorderRadius.all(Radius.circular(20.0)),
+                  ),
+                  child: const Padding(
+                    padding: EdgeInsets.fromLTRB(30.0,25.0,30.0,25.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Welcome',
+                          style: TextStyle(
+                            fontSize: 27.0,
+                            fontWeight: FontWeight.bold,
+                            color: Color(0xff7c4dff)
                           ),
-                          SizedBox(height: 2.0,),
-                          Text(
-                              'What aspect of Exploration Interests you the most',
-                            style: TextStyle(
-                              fontSize: 20.0,
-                            ),
+                        ),
+                        SizedBox(height: 2.0,),
+                        Text(
+                            'What aspect of Exploration Interests you the most',
+                          style: TextStyle(
+                            fontSize: 20.0,
                           ),
-                        ],
-                      )
-                    ),
+                        ),
+                      ],
+                    )
                   ),
                 ),
               ),
+              SizedBox(height: 3.0,),
               SizedBox(
                 width: 50.0,
                 child: ElevatedButton(
